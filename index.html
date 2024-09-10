@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Excel File Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script defer src="script.js" type="module"></script>
+  </head>
+  <body>
+    <label for="scope">Scope:</label><br />
+    <textarea class="scope" rows="4" cols="50"></textarea><br /><br />
+
+    <label for="outOfScope">Out of Scope:</label><br />
+    <textarea class="outOfScope" rows="4" cols="50"></textarea><br /><br />
+
+    <label for="assumptions">Assumptions:</label><br />
+    <textarea class="assumptions" rows="4" cols="50"></textarea><br /><br />
+
+    <label for="roles">Roles:</label><br />
+    <input type="checkbox" class="roles" value="Functional Lead (US)" />
+    Functional Lead (US)<br />
+    <input type="checkbox" class="roles" value="Tech Lead (India)" /> Tech Lead
+    (India)<br />
+    <input type="checkbox" class="roles" value="Developer (India)" /> Developer
+    (India)<br />
+    <input type="checkbox" class="roles" value="Compliance Lead (India)" />
+    Compliance Lead (India)<br />
+    <input type="checkbox" class="roles" value="Test Lead (India)" /> Test Lead
+    (India)<br />
+    <input type="checkbox" class="roles" value="Tester (India)" /> Tester
+    (India)<br />
+    <input type="checkbox" class="roles" value="Scrum Master (India)" /> Scrum
+    Master (India)<br /><br />
+
+    <label for="totalWeeks">Total Weeks:</label><br />
+    <input type="number" class="totalWeeks" min="1" step="1" /><br /><br />
+
+    <button class="generateExcelBtn">Generate Excel File</button>
+  </body>
+</html>
